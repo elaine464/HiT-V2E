@@ -1,0 +1,14 @@
+# environment.yml
+# 用于 conda 一键创建环境： conda env create -f environment.yml
+name: vid2e-wh
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10           # 或者 3.9 / 3.8，根据实际需求
+  - pyqt=5.15
+  - numpy>=1.21.0
+  - opencv>=4.5.3
+  - pip                   # 保留 pip 安装能力
+  - pip:
+    - opencv-python>=4.5.3.56
